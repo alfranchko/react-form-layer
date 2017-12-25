@@ -1,4 +1,4 @@
-# React-Form
+# react-form-layer
 
 A simple solution for organizing work with forms and inputs in React components
 
@@ -37,7 +37,7 @@ npm install --save react-form-layer
 
 ## Basic usage
 
-### Step 1
+### Step 1 - create and decorate custom inputs
 
 One of the advantages of react-form-layer is that it hides repetitive code and logic, but is sharpened
 to work with custom inputs, because in each project, usually its own mechanics and design. Therefore,
@@ -81,7 +81,7 @@ export default formInput(initialOptions)(BaseInput)
  
 ```
 
-### Step 2
+### Step 2 - use decorated inputs and Form component
 
 USE!
 
