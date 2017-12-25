@@ -1,0 +1,21 @@
+.button {
+  padding: 0 16px;
+  height: 36px;
+  line-height: 36px;
+  display: inline-block;
+  border-radius: 0;
+  font-size: 14px;
+  overflow: hidden;
+  text-align: center;
+  cursor: pointer;
+  vertical-align: middle;
+  outline: none;
+  border: 1px solid transparent;
+  text-transform: uppercase;
+  letter-spacing: 0.2px;
+  background-color: grey;
+  &:active {
+    transition: box-shadow 100ms ease;
+  }
+}
+

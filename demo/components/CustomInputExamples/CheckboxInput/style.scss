@@ -1,0 +1,102 @@
+@import "../config";
+
+.checkboxInput {
+  position: relative;
+  box-sizing: border-box;
+  color: #333333;
+  padding-top: $def-input-height;
+
+  // Элементы
+
+  &--placeholder {
+    display: flex;
+    position: absolute;
+    padding-left: 10px;
+    height: $def-input-height;
+    box-sizing: border-box;
+    pointer-events: none;
+    transition: all 0.2s ease-out;
+    align-items: flex-end;
+    padding-right: 10px;
+    font-size: 14px;
+    color: #9b9b9b;
+    top: 0;
+    padding-bottom: 4px;
+  }
+
+  &--placeholderText {
+    max-height: 2.2em;
+    overflow: hidden;
+    display: -webkit-box;
+    color: inherit;
+  }
+
+  &--errorText {
+    color: $negative-color;
+    font-size: 14px;
+    top: 100%;
+    position: absolute;
+    display: inline-block;
+    left: 10px;
+  }
+
+  &--inputWrap {
+    display: inline-flex;
+    position: relative;
+    min-height: $def-input-height;
+  }
+
+  &--icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 8px;
+    padding-left: 32px;
+    background-image: url(/demo/public/unchecked.png);
+    background-position: 0 center;
+    background-size: 24px 24px;
+    background-repeat: no-repeat;
+  }
+
+  &--label {
+    display: flex;
+    align-items: center;
+    color: inherit;
+    padding: 0 20px 0 10px;
+    width: 100%;
+    font-size: $def-input-fontSize;
+    min-height: $def-input-height;
+    box-sizing: border-box;
+    text-overflow: ellipsis;
+  }
+
+  &--input {
+    position: absolute;
+    width: 100%;
+    height: $def-input-height;
+    opacity: 0;
+    cursor: pointer;
+  }
+
+  // Модификаторы
+
+  &__hasPlaceHolder {
+    padding-top: $def-input-height;
+  }
+
+  &__focus &--placeholder {
+    color: black;
+  }
+
+  &__checked {
+    .checkboxInput--icon {
+      background-image: url(/demo/public/checked.png);
+    }
+  }
+
+  &__error {
+    .checkboxInput--placeholder {
+      color: $negative-color;
+    }
+  }
+}

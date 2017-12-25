@@ -1,0 +1,22 @@
+.demoContent{
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.demoTitle{
+  font-size: 24px;
+}
+
+.demoDesc{
+  font-size: 16px;
+  color: #333333;
+}
+
+.demoButtons{
+  display: flex;
+  margin-top: 32px;
+  flex-direction: row-reverse;
+  > * {
+    margin-right: 16px;
+  }
+}

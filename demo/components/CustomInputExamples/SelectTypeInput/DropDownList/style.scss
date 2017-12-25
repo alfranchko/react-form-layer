@@ -1,0 +1,35 @@
+.dropDown {
+  position: relative;
+  z-index: 111;
+}
+
+.dropDown--values {
+  position: absolute;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  max-height: 0;
+  visibility: hidden;
+  box-shadow: 0 2px 2px 1px rgba(0, 0, 0, 0.18);
+  > * {
+    background-color: #fff;
+    position: relative;
+    padding: 16px;
+    min-height: 16px;
+    font-size: 16px;
+    line-height: 16px;
+    overflow: hidden;
+    cursor: pointer;
+    &:hover, &.dropDown--value__selected {
+      background-color: #b7b7b8;
+    }
+  }
+}
+
+.dropDown--values__active {
+  visibility: visible;
+  max-height: 310px;
+}
+
+

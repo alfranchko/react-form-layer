@@ -1,0 +1,77 @@
+@import "../config";
+
+.inputDef {
+  position: relative;
+  box-sizing: border-box;
+  color: #333333;
+  padding-top: $def-input-height;
+
+  &--placeholder {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    color: #c0c4c4;
+    font-size: $def-input-fontSize;
+    padding-left: 10px;
+    padding-right: 48px;
+    height: $def-input-height;
+    box-sizing: border-box;
+    top: $def-input-height;
+    pointer-events: none;
+    transition: all 0.2s ease-out;
+  }
+
+  &--placeholderText {
+    max-height: 2.2em;
+    overflow: hidden;
+    display: -webkit-box;
+    color: inherit;
+  }
+
+  &--placeholder__up {
+    align-items: flex-end;
+    padding-right: 10px;
+    font-size: 14px;
+    color: #9b9b9b;
+    top: 0;
+    padding-bottom: 4px;
+  }
+
+  &--input {
+    color: inherit;
+    padding: 0 20px 0 10px;
+    width: 100%;
+    font-size: $def-input-fontSize;
+    border: 1px solid grey;
+    height: $def-input-height;
+    line-height: $def-input-height;
+    box-sizing: border-box;
+    text-overflow: ellipsis;
+    &:focus {
+      outline: none;
+      border-color: black;
+    }
+  }
+
+  &--errorText {
+    color: $negative-color;
+    font-size: 14px;
+    top: 100%;
+    position: absolute;
+    display: inline-block;
+    left: 10px;
+  }
+
+  &__focus &--placeholder {
+    color: black;
+  }
+
+  &__error {
+    .inputDef--input {
+      border-color: $negative-color;
+    }
+    .inputDef--placeholder {
+      color: $negative-color;
+    }
+  }
+}

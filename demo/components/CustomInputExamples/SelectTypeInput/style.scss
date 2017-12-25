@@ -1,0 +1,26 @@
+.selectType {
+  position: relative;
+  transition: opacity .2s ease-out;
+  input {
+    cursor: pointer;
+  }
+}
+
+.selectType--play_arrow {
+  color: #b7b7b8;
+  position: absolute;
+  bottom: 12px;
+  right: 4px;
+  width: 20px;
+  height: 20px;
+  font-size: 20px;
+  transition: .2s ease-in-out;
+  transform: rotate(0deg);
+  pointer-events: none;
+}
+
+.active {
+  .selectType--play_arrow {
+    transform: rotate(90deg);
+  }
+}

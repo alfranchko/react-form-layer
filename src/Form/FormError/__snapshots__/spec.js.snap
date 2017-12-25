@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`блок с ошибками FormError если функция не передана и есть ошибка, то вызывать renderFirstError и рендерить первую ошибку 1`] = `
+<div
+  className="form--globalError"
+>
+  error1
+</div>
+`;
+
+exports[`блок с ошибками FormError сделать snapshot 1`] = `""`;
