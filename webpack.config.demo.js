@@ -42,9 +42,8 @@ const config = {
         new webpack.NoEmitOnErrorsPlugin(),
         new webpack.DefinePlugin({
             'process.env': {
-                NODE_ENV: JSON.stringify('development'),
-            },
-            IS_BOY: JSON.stringify(false),
+                NODE_ENV: JSON.stringify('development')
+            }
         }),
         new HtmlWebpackPlugin({
             filename: 'index.html',

@@ -3,7 +3,10 @@ import TextInput from '../../components/CustomInputExamples/TextInput'
 import CheckboxInput from '../../components/CustomInputExamples/CheckboxInput'
 import SelectTypeInput from '../../components/CustomInputExamples/SelectTypeInput'
 import Button from '../../components/Button'
-import Form from '../../../src/Form'
+import Form from '../../../lib'
+
+console.log(Form)
+debugger
 
 const selectSource = [{
     value: 1,
