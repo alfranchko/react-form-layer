@@ -1,7 +1,6 @@
 import React, {Component} from 'react'
 import PropTypes from 'prop-types'
 import autobind from 'autobind-decorator'
-import FormError from './FormError'
 
 
 class Form extends Component {
@@ -288,5 +287,4 @@ class Form extends Component {
 
 }
 
-export {FormError}
 export default Form
