@@ -1,31 +1,32 @@
 {
   "name": "react-form-layer",
-  "version": "0.0.4",
+  "description": "A simple solution for organizing work with forms and inputs in React components",
+  "homepage": "https://github.com/alfranchko/react-form-layer#readme",
+  "version": "0.0.8",
   "main": "lib/index.js",
-  "scripts": {
-    "start": "cross-env NODE_ENV=development webpack-dev-server --config ./webpack.config.demo.js --hot --inline --host 127.0.0.1 --port 3000",
-    "build": "cross-env NODE_ENV=production gulp",
-    "test": "jest --config ./jest.config.js",
-    "clean": "rimraf ./lib"
-  },
   "author": {
-    "name": "Alex Franchko",
     "email": "alfranchko@gmail.com",
+    "name": "Alex Franchko",
     "url": "https://github.com/alfranchko/react-form-layer"
   },
-  "keywords": [
-    "react",
-    "reactjs",
-    "redux",
-    "react-redux",
-    "redux-form",
-    "form",
-    "react-form"
-  ],
-  "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/alfranchko/react-form-layer"
+    "url": "git+https://github.com/alfranchko/react-form-layer.git"
+  },
+  "bugs": {
+    "url": "https://github.com/alfranchko/react-form-layer/issues"
+  },
+  "keywords": [
+    "form",
+    "react",
+    "react-form",
+    "react-redux",
+    "reactjs",
+    "redux",
+    "redux-form"
+  ],
+  "dependencies": {
+    "autobind-decorator": "^2.1.0"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
@@ -40,6 +41,7 @@
     "babel-preset-react": "^6.24.1",
     "babel-preset-react-hmre": "^1.1.1",
     "babel-preset-stage-0": "^6.24.1",
+    "classnames": "^2.2.5",
     "cross-env": "^3.1.3",
     "css-loader": "^0.23.1",
     "ejs-loader": "^0.3.0",
@@ -57,21 +59,24 @@
     "jest": "^21.2.1",
     "jest-cli": "^21.2.1",
     "node-sass": "^4.7.2",
+    "prop-types": "^15.6.0",
+    "react": "^16.1.1",
+    "react-dom": "^16.1.1",
+    "react-redux": "^4.4.6",
+    "react-router-dom": "^4.2.2",
     "sass-loader": "^6.0.6",
     "style-loader": "^0.18.2",
     "webpack": "^3.3.0",
     "webpack-dev-server": "^2.6.0",
-    "webpack-stream": "^3.2.0",
-    "react-redux": "^4.4.6",
-    "react-router-dom": "^4.2.2",
-    "classnames": "^2.2.5",
-    "prop-types": "^15.6.0",
-    "react": "^16.1.1",
-    "react-dom": "^16.1.1"
+    "webpack-stream": "^3.2.0"
   },
-  "dependencies": {
-    "autobind-decorator": "^2.1.0"
+  "scripts": {
+    "build": "cross-env NODE_ENV=production gulp",
+    "clean": "rimraf ./lib",
+    "start": "cross-env NODE_ENV=development webpack-dev-server --config ./webpack.config.demo.js --hot --inline --host 127.0.0.1 --port 3000",
+    "test": "jest --config ./jest.config.js"
   },
+  "license": "MIT",
   "peerDependencies": {
     "classnames": "^2.2.5",
     "prop-types": "^15.6.0",
