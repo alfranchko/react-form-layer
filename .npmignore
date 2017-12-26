@@ -1,3 +1,5 @@
+.idea/
+package-lock.json
 .*rc
 .eslintignore
 .csscomb.json
