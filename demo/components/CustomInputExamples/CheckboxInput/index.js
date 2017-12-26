@@ -2,7 +2,7 @@ import React, {Component} from 'react'
 import PropTypes from 'prop-types'
 import classnames from 'classnames'
 import autobind from 'autobind-decorator'
-import {formInput} from '../../../../lib'
+import {formInput} from '../../../../src'
 import {defVerification} from '../verifications'
 import './style.scss'
 

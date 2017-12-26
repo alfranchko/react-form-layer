@@ -13,9 +13,6 @@ const config = {
         publicPath: '/'
     },
     devtool: 'source-map',
-    watchOptions: {
-        aggregateTimeout: 200
-    },
     resolve: {
         modules: ['node_modules', 'src', 'src/style'],
         extensions: ['.js', '.scss', '.css'],

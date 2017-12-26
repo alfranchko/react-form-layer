@@ -103,7 +103,7 @@ class Example extends Component {
             <Form onSubmit={this.onSubmit}>
                 <BaseInput name="field1" />
                 <BaseInput name="Field2" />
-                <button type="submit">Submit</ button>
+                <button type="submit">Submit</button>
             </Form>
         )
     }

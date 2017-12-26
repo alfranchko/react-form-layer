@@ -70,8 +70,8 @@ class Example extends Component {
             >
                 <BaseInput name="field1" />
                 <BaseInput name="Field2" />
-                <button type="submit">Submit</ button>
-                <button type="reset">Reset</ button>
+                <button type="submit">Submit</button>
+                <button type="reset">Reset</button>
             </Form>
         )
     }

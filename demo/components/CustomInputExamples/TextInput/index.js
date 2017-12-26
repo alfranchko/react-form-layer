@@ -2,14 +2,9 @@ import React, {Component} from 'react'
 import PropTypes from 'prop-types'
 import classnames from 'classnames'
 import autobind from 'autobind-decorator'
-import {formInput} from '../../../../lib'
-const lib = require('../../../../lib/index.js')
+import {formInput} from '../../../../src'
 import {defVerification} from '../verifications'
 import './style.scss'
-
-console.log(lib)
-console.log(formInput)
-debugger
 
 
 class TextInput extends Component {
