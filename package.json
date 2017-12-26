@@ -2,7 +2,7 @@
   "name": "react-form-layer",
   "description": "A simple solution for organizing work with forms and inputs in React components",
   "homepage": "https://github.com/alfranchko/react-form-layer#readme",
-  "version": "0.0.8",
+  "version": "0.0.4",
   "main": "lib/index.js",
   "author": {
     "email": "alfranchko@gmail.com",
@@ -55,6 +55,7 @@
     "eslint-plugin-react": "^7.1.0",
     "gulp": "^3.9.1",
     "gulp-babel": "^7.0.0",
+    "gulp-run": "^1.7.1",
     "html-webpack-plugin": "^2.29.0",
     "jest": "^21.2.1",
     "jest-cli": "^21.2.1",
