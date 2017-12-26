@@ -1,6 +1,6 @@
 {
   "name": "react-form-layer",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "main": "lib/index.js",
   "scripts": {
     "start": "cross-env NODE_ENV=development webpack-dev-server --config ./webpack.config.demo.js --hot --inline --host 127.0.0.1 --port 3000",
