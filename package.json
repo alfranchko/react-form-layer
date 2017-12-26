@@ -1,8 +1,8 @@
 {
+  "version": "0.0.5",
   "name": "react-form-layer",
   "description": "A simple solution for organizing work with forms and inputs in React components",
   "homepage": "https://github.com/alfranchko/react-form-layer#readme",
-  "version": "0.0.4",
   "main": "lib/index.js",
   "author": {
     "email": "alfranchko@gmail.com",
@@ -72,7 +72,7 @@
     "webpack-stream": "^3.2.0"
   },
   "scripts": {
-    "build": "cross-env NODE_ENV=production gulp",
+    "build": "npm t && npm run clean && cross-env NODE_ENV=production gulp",
     "clean": "rimraf ./lib",
     "start": "cross-env NODE_ENV=development webpack-dev-server --config ./webpack.config.demo.js --hot --inline --host 127.0.0.1 --port 3000",
     "test": "jest --config ./jest.config.js"
