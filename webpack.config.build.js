@@ -11,7 +11,8 @@ const config = {
         filename: 'index.js',
         libraryTarget: 'umd',
         //libraryExport: 'default',
-        library: 'react-form-Layer'
+        umdNamedDefine: true,
+        library: 'react-form-layer'
     },
     devtool: false,
     resolve: {
